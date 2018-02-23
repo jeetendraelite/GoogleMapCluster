@@ -24,25 +24,39 @@ public class MainActivity extends BaseGoogleMapsActivity {
     @Override
     public void onMapReady(GoogleMap googleMap) {
         setupMap(googleMap);
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(23.0384, 72.5288), 15));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(23.0506004, 72.600665), 15));
 
         mClusterManager = new ClusterManager<>(this, googleMap);
 
         googleMap.setOnCameraIdleListener(mClusterManager);
         googleMap.setOnMarkerClickListener(mClusterManager);
         googleMap.setOnInfoWindowClickListener(mClusterManager);
-        addPersonItems();
-        mClusterManager.cluster();
-    }
+        addPersonItems(googleMap);
 
-    private void addPersonItems() {
-        for (int i = 0; i < 3; i++) {
-            mClusterManager.addItem(new Person(23.0225, 72.5288, "Vastrapur Lake", "https://twitter.com/pjapplez"));
+    }
+//23.0941395,72.6122042
+    private void addPersonItems(GoogleMap googleMap) {
+
+     //   mClusterManager = new ClusterManager<>(this, googleMap);
+
+      //  for (int i = 0; i < 4; i++)
+        {
+            mClusterManager.addItem(new Person(23.0506004, 72.600665, "SBI Civil Branch", "https://twitter.com/pjapplez"));
             mClusterManager.addItem(new Person(23.0734, 72.6266, "Ahme airport", "https://twitter.com/pjapplez"));
             mClusterManager.addItem(new Person(23.0273, 72.6008, "Railway Station", "https://twitter.com/pjapplez"));
-         //   mClusterManager.addItem(new Person(23.0858, 72.6296, "Railway Station", "https://twitter.com/pjapplez"));
-           // mClusterManager.addItem(new Person(23.0619, 72.5916, "Railway Station", "https://twitter.com/pjapplez"));
+
+            mClusterManager.addItem(new Person(23.0858, 72.6296, "Indira Bridge", "https://twitter.com/pjapplez"));
+
+
+         mClusterManager.addItem(new Person(23.0506024, 72.600665, "SBI Civil Branch", "https://twitter.com/pjapplez"));
+            mClusterManager.addItem(new Person(23.0134, 72.6266, "Ahme airport", "https://twitter.com/pjapplez"));
+            mClusterManager.addItem(new Person(23.0293, 72.6008, "Railway Station", "https://twitter.com/pjapplez"));
+
+            mClusterManager.addItem(new Person(23.1858, 72.6296, "Indira Bridge", "https://twitter.com/pjapplez"));
+          //  mClusterManager.addItem(new Person(23.0941395, 72.6122042, "Koteshwar Temple Motera", "https://twitter.com/pjapplez"));
         }
+
+        mClusterManager.cluster();
     }
 
     private class RenderClusterInfoWindow extends DefaultClusterRenderer<Person> {
