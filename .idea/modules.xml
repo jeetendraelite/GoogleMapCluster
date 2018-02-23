@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GoogleMapsTutorial.iml" filepath="$PROJECT_DIR$/GoogleMapsTutorial.iml" />
-      <module fileurl="file://$PROJECT_DIR$/GoogleMapsTutorial.iml" filepath="$PROJECT_DIR$/GoogleMapsTutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/GoogleMapsTutorial.iml" filepath="$PROJECT_DIR$/.idea/GoogleMapsTutorial.iml" />
+      <module fileurl="file://D:\Bitbucket Code\GoogleMapsTutorial\GoogleMapsTutorial.iml" filepath="D:\Bitbucket Code\GoogleMapsTutorial\GoogleMapsTutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Bitbucket Code\GoogleMapsTutorial\app\app.iml" filepath="D:\Bitbucket Code\GoogleMapsTutorial\app\app.iml" />
     </modules>
   </component>
 </project>

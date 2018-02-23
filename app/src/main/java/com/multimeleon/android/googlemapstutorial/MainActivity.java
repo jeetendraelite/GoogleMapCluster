@@ -24,7 +24,7 @@ public class MainActivity extends BaseGoogleMapsActivity {
     @Override
     public void onMapReady(GoogleMap googleMap) {
         setupMap(googleMap);
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(-26.167616, 28.079329), 10));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(23.0384, 72.5288), 15));
 
         mClusterManager = new ClusterManager<>(this, googleMap);
 
@@ -37,9 +37,11 @@ public class MainActivity extends BaseGoogleMapsActivity {
 
     private void addPersonItems() {
         for (int i = 0; i < 3; i++) {
-            mClusterManager.addItem(new Person(-26.187616, 28.079329, "PJ", "https://twitter.com/pjapplez"));
-            mClusterManager.addItem(new Person(-26.207616, 28.079329, "PJ2", "https://twitter.com/pjapplez"));
-            mClusterManager.addItem(new Person(-26.217616, 28.079329, "PJ3", "https://twitter.com/pjapplez"));
+            mClusterManager.addItem(new Person(23.0225, 72.5288, "Ahmedabad", "https://twitter.com/pjapplez"));
+            mClusterManager.addItem(new Person(23.0734, 72.6266, "Ahme airport", "https://twitter.com/pjapplez"));
+            mClusterManager.addItem(new Person(23.0273, 72.6008, "Railway Station", "https://twitter.com/pjapplez"));
+         //   mClusterManager.addItem(new Person(23.0858, 72.6296, "Railway Station", "https://twitter.com/pjapplez"));
+           // mClusterManager.addItem(new Person(23.0619, 72.5916, "Railway Station", "https://twitter.com/pjapplez"));
         }
     }
 
