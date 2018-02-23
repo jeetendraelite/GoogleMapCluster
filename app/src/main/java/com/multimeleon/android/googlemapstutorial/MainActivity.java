@@ -37,7 +37,7 @@ public class MainActivity extends BaseGoogleMapsActivity {
 
     private void addPersonItems() {
         for (int i = 0; i < 3; i++) {
-            mClusterManager.addItem(new Person(23.0225, 72.5288, "Ahmedabad", "https://twitter.com/pjapplez"));
+            mClusterManager.addItem(new Person(23.0225, 72.5288, "Vastrapur Lake", "https://twitter.com/pjapplez"));
             mClusterManager.addItem(new Person(23.0734, 72.6266, "Ahme airport", "https://twitter.com/pjapplez"));
             mClusterManager.addItem(new Person(23.0273, 72.6008, "Railway Station", "https://twitter.com/pjapplez"));
          //   mClusterManager.addItem(new Person(23.0858, 72.6296, "Railway Station", "https://twitter.com/pjapplez"));
